@@ -41,25 +41,25 @@ export default function HeroContent({
       {showBorderFrame && (
         <>
           {/* Top */}
-          <div className="pointer-events-none absolute inset-x-0 top-4 h-px w-full bg-neutral-800 md:top-10" />
+          <div className="pointer-events-none absolute inset-x-0 top-4 h-px w-full bg-neutral-200 dark:bg-neutral-800 md:top-10 transition-colors duration-300" />
           {/* Bottom */}
-          <div className="pointer-events-none absolute inset-x-0 bottom-4 h-px w-full bg-neutral-800 md:bottom-10" />
+          <div className="pointer-events-none absolute inset-x-0 bottom-4 h-px w-full bg-neutral-200 dark:bg-neutral-800 md:bottom-10 transition-colors duration-300" />
           {/* Left */}
-          <div className="pointer-events-none absolute inset-y-0 left-4 h-full w-px bg-neutral-800 md:left-10" />
+          <div className="pointer-events-none absolute inset-y-0 left-4 h-full w-px bg-neutral-200 dark:bg-neutral-800 md:left-10 transition-colors duration-300" />
           {/* Right */}
-          <div className="pointer-events-none absolute inset-y-0 right-4 h-full w-px bg-neutral-800 md:right-10" />
+          <div className="pointer-events-none absolute inset-y-0 right-4 h-full w-px bg-neutral-200 dark:bg-neutral-800 md:right-10 transition-colors duration-300" />
         </>
       )}
 
       {/* Content — bottom-aligned */}
       <div className="relative z-40">
         {title && (
-          <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-neutral-200 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight sm:leading-none">
+          <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-200 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight sm:leading-none transition-colors duration-300">
             {title}
           </h1>
         )}
         {subtitle && (
-          <p className="mt-4 max-w-xl text-base text-neutral-400 md:mt-6 md:text-lg">
+          <p className="mt-4 max-w-xl text-base text-neutral-600 dark:text-neutral-400 md:mt-6 md:text-lg transition-colors duration-300">
             {subtitle}
           </p>
         )}

@@ -22,7 +22,7 @@ export default function Logo({ label = "Startup", href = "/", icon }) {
   return (
     <Link
       href={href}
-      className="flex items-center justify-center space-x-2 text-center text-2xl font-bold text-gray-100 py-0"
+      className="flex items-center justify-center space-x-2 text-center text-2xl font-bold text-neutral-800 dark:text-gray-100 py-0 transition-colors duration-300"
     >
       {/* Icon container */}
       <div className="relative flex h-8 w-8 items-center justify-center rounded-md border border-slate-800 bg-black text-sm text-white antialiased">
@@ -37,7 +37,7 @@ export default function Logo({ label = "Startup", href = "/", icon }) {
       {/* Brand name — hidden on small screens */}
       {label && (
         <div className="hidden flex-col sm:flex">
-          <h1 className="font-sans text-white">{label}</h1>
+          <h1 className="font-sans text-neutral-900 dark:text-white transition-colors duration-300">{label}</h1>
         </div>
       )}
     </Link>

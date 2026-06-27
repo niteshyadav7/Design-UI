@@ -7,7 +7,7 @@ export default function SecondaryLink({
   return (
     <a
       href={href}
-      className={`text-sm font-medium text-neutral-400 transition-colors hover:text-neutral-200 ${className}`}
+      className={`text-sm font-medium text-neutral-600 dark:text-neutral-400 transition-colors hover:text-neutral-900 dark:hover:text-neutral-200 ${className}`}
       {...props}
     >
       {label} →
